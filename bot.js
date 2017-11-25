@@ -13,7 +13,7 @@ const bot = new Discord.Client()
 // Bot Config
 const config = require('../shared/config.js')
 
-bot.login(config.token)
+client.login(process.env.BOT_TOKEN);
 
 bot.on('ready', () => {
   log.i('Connected to Discord!')
